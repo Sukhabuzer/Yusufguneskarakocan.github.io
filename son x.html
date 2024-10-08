@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sitesi</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #3e3e3e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.2rem;
+        }
+        header h1 {
+            color: #fff; /* Adının rengi beyaz */
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .project {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .project img {
+            max-width: 150px;
+            max-height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+        .survey {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #3e3e3e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function showWelcomeMessage() {
+            alert("Hoşgeldiniz!");
+        }
+
+        window.onload = function() {
+            showWelcomeMessage();
+        }
+    </script>
+</head>
+<body>
+
+    <!-- 1. Aşama: Ana Sayfa -->
+    <header>
+        <h1>Muhammet Yusuf Güneş</h1>
+    </header>
+
+    <!-- 2. Aşama: Kendimi Tanıtma Alanı -->
+    <section>
+        <h2>Kendimi Tanıtayım</h2>
+        <p>İleride iyi bir bilgisayar mühendisi olmak istiyorum ve bu da ilk ödevim.</p>
+    </section>
+
+    <!-- 3. Aşama: Projeler Kısmı -->
+    <section>
+        <h2>Projelerim</h2>
+        <div class="project">
+            <img src="https://www.istockphoto.com/tr/foto%C4%9Fraf/artificial-intelligence-concept-gm1364859722-435919746" alt="Proje 1 Görseli">
+            <div>
+                <h3>Proje 1</h3>
+                <p>Yakında...</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://www.istockphoto.com/tr/foto%C4%9Fraf/abs-hologram-veri-ak%C4%B1%C5%9F-%C4%B1zgaras%C4%B1-gm1212064060-351744659" alt="Proje 2 Görseli">
+            <div>
+                <h3>Proje 2</h3>
+                <p>Yakında...</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="https://www.istockphoto.com/tr/foto%C4%9Fraf/eski-daktilo-ve-diz%C3%BCst%C3%BC-bilgisayar-kullan%C4%B1m%C4%B1-gm1134490157-301484580" alt="Proje 3 Görseli">
+            <div>
+                <h3>Proje 3</h3>
+                <p>Yakında...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Aşama: Anket -->
+    <section class="survey">
+        <h2>Site Hakkında Ne Düşünüyorsunuz?</h2>
+        <form>
+            <label for="memnuniyet">Siteden memnun kaldınız mı?</label><br>
+            <input type="radio" id="evet" name="memnuniyet" value="Evet">
+            <label for="evet">Evet</label><br>
+            <input type="radio" id="hayir" name="memnuniyet" value="Hayır">
+            <label for="hayir">Hayır</label><br><br>
+
+            <label for="yorum">Yorumlarınız:</label><br>
+            <textarea id="yorum" name="yorum" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Gönder">
+        </form>
+    </section>
+
+</body>
+</html>
